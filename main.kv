@@ -1,0 +1,18 @@
+#:kivy 1.11.1
+
+<MainApp>:
+    orientation: 'vertical'
+
+    TextInput:
+        id: input_text
+
+    Button:
+        text: 'Salvar'
+        on_press: app.save_name()
+
+    Button:
+        text: 'Listar'
+        on_press: app.list_names()
+
+    MDListView:
+        id: list_view
